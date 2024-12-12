@@ -21,18 +21,11 @@ const Navbar = () => {
         <ul className="font-medium flex flex-col md:flex-row lg:space-x-8 sm:space-x-4 space-x-2 md:space-y-0 p-4 md:p-0">
             <li className="navitem">
                 <Link to="home" spy={true} smooth={true} offset={-100} duration={500} 
-                onClick={(e)=>{
-                    e.preventDefault();
-                    handelCloseMenu;
-                    
-                }} 
+                onClick={handelCloseMenu} 
                 className="text-white"    >Home</Link>
             </li>
             <li className="navitem">
-                <Link to="services" spy={true} smooth={true} offset={-10} duration={500}   onClick={(e)=>{
-                    e.preventDefault();
-                    handelCloseMenu;   
-                }}  className="text-white">Services</Link>
+                <Link to="services" spy={true} smooth={true} offset={-10} duration={500}   onClick={handelCloseMenu} className="text-white">Services</Link>
             </li>
             <li className="navitem">
                 <Link to="about"  spy={true} smooth={true} offset={-10} duration={500} onClick={handelCloseMenu} className="text-white">About us</Link>

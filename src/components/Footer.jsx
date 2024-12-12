@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 
 import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaMapMarked, FaMapMarkedAlt, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 
@@ -25,16 +26,16 @@ const Footer = () => {
                 <div className="space-y-2">
                     <h3 className="text-xl font-semibold mb-4">Quick Links </h3>
                         <ul className="space-y-3">
-                            <li><a href="#home" className="hover:underline text-gray-700">Home</a></li>
+                            <li><Link to="home" spy={true} smooth={true} offset={-100} duration={500}  className="hover:underline text-gray-700">Home</Link></li>
                         
                         
-                            <li><a href="#services" className="hover:underline text-gray-700">Services</a></li>
+                            <li><Link to="services" spy={true} smooth={true} offset={-10} duration={500} className="hover:underline text-gray-700">Services</Link></li>
                         
                         
-                            <li><a href="#about" className="hover:underline text-gray-700">About</a></li>
+                            <li><Link to="about"  spy={true} smooth={true} offset={-10} duration={500} className="hover:underline text-gray-700">About</Link></li>
                         
                         
-                            <li><a href="#contact" className="hover:underline text-gray-700">Contact us</a></li>
+                            <li><Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className="hover:underline text-gray-700">Contact us</Link></li>
                         </ul>
                    
                 </div>
